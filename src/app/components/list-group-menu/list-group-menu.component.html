@@ -1,4 +1,5 @@
 <div class="list-group">
+<<<<<<< HEAD
   @for (entry of menu; track entry) {
     <a
       class="list-group-item list-group-item-action text-truncate"
@@ -8,4 +9,11 @@
       {{ entry.text }}
     </a>
   }
+=======
+    @for(entry of menu; track entry) {
+        <a class="list-group-item list-group-item-action text-truncate" [routerLink]="entry.routerLink" [routerLinkActive]="['active']">
+            {{entry.text}}
+        </a>
+    }
+>>>>>>> 07-fancy-app-menu
 </div>

@@ -8,7 +8,15 @@ import { ListGroupMenuComponent } from './components/list-group-menu/list-group-
 @Component({
   selector: 'app-root',
   standalone: true,
+<<<<<<< HEAD
   imports: [RouterLink, RouterOutlet, ListGroupMenuComponent],
+=======
+  imports: [
+    RouterLink,
+    RouterOutlet,
+    ListGroupMenuComponent
+  ],
+>>>>>>> 07-fancy-app-menu
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

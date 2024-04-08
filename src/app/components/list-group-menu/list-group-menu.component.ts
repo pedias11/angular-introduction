@@ -7,6 +7,7 @@ import { MenuItem } from 'src/app/shared/interfaces/menu-item';
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './list-group-menu.component.html',
+<<<<<<< HEAD
   styleUrl: './list-group-menu.component.css',
 })
 export class ListGroupMenuComponent {
@@ -22,5 +23,14 @@ export class ListGroupMenuComponent {
       text: 'Component Output Example',
       routerLink: 'component-output-example',
     },
+=======
+  styleUrl: './list-group-menu.component.css'
+})
+export class ListGroupMenuComponent {
+  menu: MenuItem[] = [
+    {text: 'Component Input Example', routerLink: 'component-input-example'},
+    {text: '@for Directive Example', routerLink: 'for-directive-example'},
+    {text: 'Event Bid Example', routerLink: 'event-bind-example'}
+>>>>>>> 07-fancy-app-menu
   ];
 }
