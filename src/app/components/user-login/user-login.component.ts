@@ -1,14 +1,15 @@
 import { Component, inject } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { jwtDecode } from 'jwt-decode';
 import { Credentials, LoggedInUser } from 'src/app/shared/interfaces/user';
 import { UserService } from 'src/app/shared/services/user.service';
+import { ReactiveFormExampleComponent } from '../reactive-form-example/reactive-form-example.component';
 
 @Component({
   selector: 'app-user-login',
   standalone: true,
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './user-login.component.html',
   styleUrl: './user-login.component.css'
 })
